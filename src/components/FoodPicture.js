@@ -8,6 +8,7 @@ import MatchFound from "./MatchFound"
 const FoodPicture = ({finalFood, handleClickX, handleClickO, isMatched, matchCancel}) => {
 
     const {foodChoice} = useGlobalContext()
+    const foodPic = finalFood.image
 
     return (   
         <>
@@ -17,7 +18,7 @@ const FoodPicture = ({finalFood, handleClickX, handleClickO, isMatched, matchCan
                 ) : (
                 <> 
                     <h3>{finalFood.title}</h3>
-                    <img src={finalFood.image} alt={`picture of delicious ${foodChoice}`} />
+                    <img src={foodPic} alt={`picture of delicious ${foodChoice}`} />
                     <div className={styles.buttonContainer}>
                         <FaRegWindowClose className={styles.buttonX} onClick={handleClickX}/>
                         <FaRegCheckSquare className={styles.buttonV} onClick={handleClickO}/>
