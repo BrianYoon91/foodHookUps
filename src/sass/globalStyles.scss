@@ -1,0 +1,47 @@
+@use "./setup";
+@import url('https://fonts.googleapis.com/css2?family=Fuzzy+Bubbles:wght@400;700&display=swap');;
+@import url('https://fonts.googleapis.com/css2?family=Alfa+Slab+One&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Amatic+SC:wght@400;700&display=swap');
+
+
+
+html {
+    background-color: #faeee7;
+}
+
+img {
+    display: block;
+    object-fit: cover;
+    width: 500px; 
+    height: 500px;
+    border-radius: 20px;
+    box-shadow: 2px 1px 45px 13px rgba(255,198,199,1);
+}
+
+h1 {
+    text-align: center;
+    font-family: 'Alfa Slab One', sans-serif ;
+    font-size: 60px;
+    color: #ff8ba7;
+}
+
+h3 {
+    font-family: 'Amatic SC', sans-serif;
+    font-size: 30px;
+}
+
+h4 {
+    text-align: center;
+    font-family: 'Alfa Slab One', sans-serif ;
+    font-size: 35px;
+    margin-top: 0;
+    color: rgb(247, 84, 84);
+}
+
+label {
+    font-family: 'Fuzzy Bubbles', sans-serif;
+    font-size: 40px;
+    text-align: center;
+    color: #33272a;
+}
+

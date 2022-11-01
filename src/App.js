@@ -1,24 +1,25 @@
-import logo from './logo.svg';
-import './App.css';
+
+import Header from "./components/Header";
+import FoodForm from "./components/FoodForm";
+import DisplayMatch from "./components/DisplayMatch";
+import Card from "./components/UI/Card";
+
+import { Route, Routes} from "react-router-dom";
+
+import "./sass/globalStyles.scss"
 
 function App() {
+
   return (
-    <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
-    </div>
+
+    <Card>
+      <Header/>
+        <Routes>
+          <Route path="/" element={<FoodForm/>}/>
+          <Route path="/displayMatch" element={<DisplayMatch/>} />
+        </Routes>
+    </Card>
+    
   );
 }
 
