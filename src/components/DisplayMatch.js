@@ -1,5 +1,5 @@
 import { useGlobalContext } from "../context"
-import { useEffect, useState} from "react"
+import { useState} from "react"
 import Card from "./UI/Card"
 import { Link } from "react-router-dom"
 import FoodPicture from "./FoodPicture"
@@ -9,7 +9,7 @@ import styles from "./DisplayMatch.module.scss"
 
 const DisplayMatch = () => {
 
-    const {loading, refresh, apiArray,finalFood, setFinalFood } = useGlobalContext()
+    const {refresh, apiArray,finalFood, setFinalFood } = useGlobalContext()
     const [isMatched, setIsMatched] = useState(false);
 
     const randomIndex = () => {

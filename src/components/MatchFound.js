@@ -5,7 +5,7 @@ import styles from "./MatchFound.module.scss"
 
 const MatchFound = ({foodTitle, matchCancel}) => {
 
-    const {refresh, foodChoice } = useGlobalContext()
+    const {foodChoice } = useGlobalContext()
 
     return (
         <Card>

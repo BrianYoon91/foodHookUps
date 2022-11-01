@@ -1,4 +1,4 @@
-import { useEffect, useState } from "react"
+
 import { useGlobalContext } from "../context"
 import {FaRegWindowClose, FaRegCheckSquare} from 'react-icons/fa'
 import styles from "./DisplayMatch.module.scss"
